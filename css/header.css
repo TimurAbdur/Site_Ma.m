@@ -1,0 +1,66 @@
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.header__top-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid rgb(255,255,255, 50%);
+}
+
+.header__top-adress {
+    display: flex;
+    gap: 50px;
+}
+
+.header__top-adress-email, .header__top-adress-phone {
+    font-family: 'Helvetica Neue';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.serch-img {
+    cursor: pointer;
+}
+
+.header__menu {
+    padding: 30px 0;
+}
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
+.menu__link {
+    font-family: 'Helvetica Neue';
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.menu__link::after {
+    content: "";
+    width: 100%;
+    left: 0;
+    bottom: -3px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    transform: scale(0);
+    transition: 0.4s;
+}
+
+.menu__link:hover::after{
+    transform: scale(1);
+}
